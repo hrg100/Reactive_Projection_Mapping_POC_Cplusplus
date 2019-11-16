@@ -18,6 +18,7 @@
 #include <opencv2/opencv.hpp>
 #include <frame_processing.h>
 #include <iostream>
+#include "pcl_utilities.h"
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/string_cast.hpp>
 
@@ -35,6 +36,7 @@ GLuint textureRef = 0; // Reference to texture address in memory
 GLuint mvLoc, projLoc; // Connect C++ program to Shaders
 GLsizei maxPoints; //The number of points to be drawn
 std::vector<float> pointCoordinatesVector, textureCoordinatesVector; // vertex and texture coordinates
+
 rs2::pointcloud pc; // Point cloud object
 rs2::points points; // RealSense points object
 
@@ -71,8 +73,7 @@ void updatePoints(const rs2::vertex *point_coords, const rs2::texture_coordinate
     glBufferSubData(GL_ARRAY_BUFFER,0,(long int)pointCoordinatesVector.size()*sizeof(float),pointCoordinatesVector.data());
     glBindBuffer(GL_ARRAY_BUFFER,vbo[1]);
     glBufferSubData(GL_ARRAY_BUFFER,0,(long int)textureCoordinatesVector.size()*sizeof(float),textureCoordinatesVector.data());
-//    cout << "Point 1 XYZ Raw " << to_string(point_1) << endl;
-//    cout << "Point 2 XYZ Raw " << to_string(point_2) << endl;
+
 }
 
 void updateFrame(rs2::frameset &frames){
@@ -97,6 +98,12 @@ void updateFrame(rs2::frameset &frames){
     // Generate the pointcloud and texture mappings
     points = pc.calculate(depth);
 
+    // Convert RealSense point cloud to PCL point cloud
+    auto pcl_points = points_to_pcl(points);
+
+    // Create mesh from point cloud
+    auto pcl_mesh_points = create_mesh(pcl_points);
+
     cv::Mat image_frame;
 
     // Use images from realsense as textures
@@ -115,6 +122,8 @@ void updateFrame(rs2::frameset &frames){
 
     const rs2::vertex* point_coords = points.get_vertices();
     const rs2::texture_coordinate* text_coords = points.get_texture_coordinates();
+
+
 
     //Update points and texture coordinates
     updatePoints(point_coords, text_coords);

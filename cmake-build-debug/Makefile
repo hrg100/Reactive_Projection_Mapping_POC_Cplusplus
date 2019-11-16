@@ -204,6 +204,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/realsense2.dir/build.make CMakeFiles/realsense2.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/pcl_utilities.o: src/pcl_utilities.cpp.o
+
+.PHONY : src/pcl_utilities.o
+
+# target to build an object file
+src/pcl_utilities.cpp.o:
+	$(MAKE) -f CMakeFiles/realsense2.dir/build.make CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.o
+.PHONY : src/pcl_utilities.cpp.o
+
+src/pcl_utilities.i: src/pcl_utilities.cpp.i
+
+.PHONY : src/pcl_utilities.i
+
+# target to preprocess a source file
+src/pcl_utilities.cpp.i:
+	$(MAKE) -f CMakeFiles/realsense2.dir/build.make CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.i
+.PHONY : src/pcl_utilities.cpp.i
+
+src/pcl_utilities.s: src/pcl_utilities.cpp.s
+
+.PHONY : src/pcl_utilities.s
+
+# target to generate assembly for a file
+src/pcl_utilities.cpp.s:
+	$(MAKE) -f CMakeFiles/realsense2.dir/build.make CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.s
+.PHONY : src/pcl_utilities.cpp.s
+
 src/shaders.o: src/shaders.cpp.o
 
 .PHONY : src/shaders.o
@@ -303,6 +330,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/pcl_utilities.o"
+	@echo "... src/pcl_utilities.i"
+	@echo "... src/pcl_utilities.s"
 	@echo "... src/shaders.o"
 	@echo "... src/shaders.i"
 	@echo "... src/shaders.s"

@@ -17,6 +17,13 @@
 #include <cstdlib>
 #include "callbacks.h"
 #include "shaders.hpp"
+#include <pcl/io/pcd_io.h>
+#include <pcl/io/ply_io.h>
+#include <pcl/point_cloud.h>
+#include <pcl/console/parse.h>
+#include <pcl/common/transforms.h>
+#include <pcl/visualization/pcl_visualizer.h>
+#include <pdal/pdal.hpp>
 
 using namespace std;
 int textureMode;
@@ -28,6 +35,9 @@ int main(int argc, const char * argv[]) {
         cout << "Please provide the following required input arguments: <vertex_shader_path>.glsl <fragment_shader_path>.glsl texture_mode" << endl;
         return 1;
     }
+
+    pdal::BOX2D();
+    pcl::PointCloud<pcl::PointXYZ>::Ptr source_cloud (new pcl::PointCloud<pcl::PointXYZ> ());
 
     // Get the paths to the vertex and fragment shader files
     const char *vertShader = argv[1];
@@ -93,6 +103,7 @@ int main(int argc, const char * argv[]) {
     const int height = actualScreenHeight;
     cfg.enable_stream(RS2_STREAM_COLOR, width, height, RS2_FORMAT_BGR8, 30);
     cfg.enable_stream(RS2_STREAM_DEPTH, width, height, RS2_FORMAT_Z16, 30);
+    cfg.enable_stream(RS2_STREAM_INFRARED, width, height, RS2_FORMAT_Y8, 30);
 
     rs2::pipeline_profile profile = pipe.start(cfg);
 

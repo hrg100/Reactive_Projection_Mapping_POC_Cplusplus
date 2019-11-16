@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/realsense2.dir/src/callbacks.cpp.o"
   "CMakeFiles/realsense2.dir/src/frame_processing.cpp.o"
   "CMakeFiles/realsense2.dir/src/main.cpp.o"
+  "CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.o"
   "CMakeFiles/realsense2.dir/src/shaders.cpp.o"
   "CMakeFiles/realsense2.dir/src/transformations.cpp.o"
   "CMakeFiles/realsense2.dir/src/utils.cpp.o"

@@ -96,9 +96,22 @@ CMakeFiles/realsense2.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hayley/Development/OpenGL_Starter_Code/src/main.cpp -o CMakeFiles/realsense2.dir/src/main.cpp.s
 
+CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.o: CMakeFiles/realsense2.dir/flags.make
+CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.o: ../src/pcl_utilities.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hayley/Development/OpenGL_Starter_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.o -c /home/hayley/Development/OpenGL_Starter_Code/src/pcl_utilities.cpp
+
+CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hayley/Development/OpenGL_Starter_Code/src/pcl_utilities.cpp > CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.i
+
+CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hayley/Development/OpenGL_Starter_Code/src/pcl_utilities.cpp -o CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.s
+
 CMakeFiles/realsense2.dir/src/shaders.cpp.o: CMakeFiles/realsense2.dir/flags.make
 CMakeFiles/realsense2.dir/src/shaders.cpp.o: ../src/shaders.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hayley/Development/OpenGL_Starter_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/realsense2.dir/src/shaders.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hayley/Development/OpenGL_Starter_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/realsense2.dir/src/shaders.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense2.dir/src/shaders.cpp.o -c /home/hayley/Development/OpenGL_Starter_Code/src/shaders.cpp
 
 CMakeFiles/realsense2.dir/src/shaders.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/realsense2.dir/src/shaders.cpp.s: cmake_force
 
 CMakeFiles/realsense2.dir/src/transformations.cpp.o: CMakeFiles/realsense2.dir/flags.make
 CMakeFiles/realsense2.dir/src/transformations.cpp.o: ../src/transformations.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hayley/Development/OpenGL_Starter_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/realsense2.dir/src/transformations.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hayley/Development/OpenGL_Starter_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/realsense2.dir/src/transformations.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense2.dir/src/transformations.cpp.o -c /home/hayley/Development/OpenGL_Starter_Code/src/transformations.cpp
 
 CMakeFiles/realsense2.dir/src/transformations.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/realsense2.dir/src/transformations.cpp.s: cmake_force
 
 CMakeFiles/realsense2.dir/src/utils.cpp.o: CMakeFiles/realsense2.dir/flags.make
 CMakeFiles/realsense2.dir/src/utils.cpp.o: ../src/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hayley/Development/OpenGL_Starter_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/realsense2.dir/src/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hayley/Development/OpenGL_Starter_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/realsense2.dir/src/utils.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense2.dir/src/utils.cpp.o -c /home/hayley/Development/OpenGL_Starter_Code/src/utils.cpp
 
 CMakeFiles/realsense2.dir/src/utils.cpp.i: cmake_force
@@ -140,6 +153,7 @@ realsense2_OBJECTS = \
 "CMakeFiles/realsense2.dir/src/callbacks.cpp.o" \
 "CMakeFiles/realsense2.dir/src/frame_processing.cpp.o" \
 "CMakeFiles/realsense2.dir/src/main.cpp.o" \
+"CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.o" \
 "CMakeFiles/realsense2.dir/src/shaders.cpp.o" \
 "CMakeFiles/realsense2.dir/src/transformations.cpp.o" \
 "CMakeFiles/realsense2.dir/src/utils.cpp.o"
@@ -150,6 +164,7 @@ realsense2_EXTERNAL_OBJECTS =
 ../build/realsense2: CMakeFiles/realsense2.dir/src/callbacks.cpp.o
 ../build/realsense2: CMakeFiles/realsense2.dir/src/frame_processing.cpp.o
 ../build/realsense2: CMakeFiles/realsense2.dir/src/main.cpp.o
+../build/realsense2: CMakeFiles/realsense2.dir/src/pcl_utilities.cpp.o
 ../build/realsense2: CMakeFiles/realsense2.dir/src/shaders.cpp.o
 ../build/realsense2: CMakeFiles/realsense2.dir/src/transformations.cpp.o
 ../build/realsense2: CMakeFiles/realsense2.dir/src/utils.cpp.o
@@ -185,12 +200,36 @@ realsense2_EXTERNAL_OBJECTS =
 ../build/realsense2: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.3.2.0
 ../build/realsense2: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.3.2.0
 ../build/realsense2: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.3.2.0
+../build/realsense2: /usr/local/lib/libpcl_io.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libboost_system.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/librealsense2.so.2.29.0
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkChartsCore-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkInfovisCore-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libfreetype.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libz.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libjpeg.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libpng.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libtiff.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libexpat.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkViewsCore-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1.1
+../build/realsense2: /usr/lib/libpdalcpp.so
 ../build/realsense2: /usr/lib/x86_64-linux-gnu/libopencv_video.so.3.2.0
 ../build/realsense2: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.3.2.0
 ../build/realsense2: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.3.2.0
 ../build/realsense2: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.3.2.0
 ../build/realsense2: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.3.2.0
 ../build/realsense2: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.3.2.0
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkIOGeometry-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkIOLegacy-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkIOPLY-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1.1
 ../build/realsense2: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.3.2.0
 ../build/realsense2: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.3.2.0
 ../build/realsense2: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.3.2.0
@@ -200,8 +239,57 @@ realsense2_EXTERNAL_OBJECTS =
 ../build/realsense2: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
 ../build/realsense2: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
 ../build/realsense2: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
+../build/realsense2: /usr/local/lib/libpcl_octree.so
+../build/realsense2: /usr/local/lib/libpcl_common.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkInteractionWidgets-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkImagingFourier-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkalglib-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkFiltersHybrid-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkImagingGeneral-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkImagingSources-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkImagingHybrid-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkRenderingAnnotation-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkImagingColor-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolume-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkIOXML-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkIOXMLParser-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkIOCore-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkRenderingContext2D-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libfreetype.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libGLEW.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkImagingCore-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkCommonColor-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeometry-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkFiltersSources-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeneral-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkCommonComputationalGeometry-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkFiltersCore-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkIOImage-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkCommonExecutionModel-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkCommonDataModel-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkCommonTransforms-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkCommonMisc-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkCommonMath-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkCommonSystem-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtksys-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libvtkmetaio-7.1.so.7.1.1
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libz.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libSM.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libICE.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libX11.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libXext.so
+../build/realsense2: /usr/lib/x86_64-linux-gnu/libXt.so
 ../build/realsense2: CMakeFiles/realsense2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hayley/Development/OpenGL_Starter_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ../build/realsense2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hayley/Development/OpenGL_Starter_Code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ../build/realsense2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/realsense2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
